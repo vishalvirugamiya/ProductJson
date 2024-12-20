@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 
-<LinearLayout
+<FrameLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
@@ -59,109 +59,125 @@
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="@dimen/_10sdp"
                 android:layout_marginRight="@dimen/_10sdp"
-                android:layout_marginTop="@dimen/_20sdp"
+                android:layout_marginTop="@dimen/_10sdp"
                 android:orientation="vertical">
 
 
-                <TextView
-                    android:id="@+id/product"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:baselineAligned="false"
-                    android:text="product"
-                    android:textColor="@color/black"
-                    android:textSize="@dimen/_25sdp" />
-
-                <TextView
-                    android:id="@+id/category"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="category"
-                    android:textColor="@color/black"
-                    android:textSize="@dimen/_20sdp" />
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    >
-
-                    <RatingBar
-                        android:id="@+id/RatingBar"
-                        style="?android:attr/ratingBarStyleSmall"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="center"
-                        android:isIndicator="true"
-                        android:numStars="5"
-                        android:progressBackgroundTint="#D0000000"
-                        android:progressTint="@color/black"
-                        android:stepSize="0.9" />
-
-                    <TextView
-                        android:id="@+id/rate"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginLeft="@dimen/_5sdp"
-                        android:text="rate"
-                        android:textColor="#92000000"
-                        android:textSize="@dimen/_12sdp" />
-
-
-
-
-                </LinearLayout>
 
                 <LinearLayout
-                    android:width="0.5dp"
                     android:background="@drawable/shape2"
-                    android:layout_gravity="center"
+                    android:orientation="vertical"
                     android:layout_width="match_parent"
-                    android:layout_height="@dimen/_40sdp">
+                    android:layout_height="wrap_content">
 
                     <TextView
-                        android:id="@+id/price"
+                        android:id="@+id/product"
                         android:layout_marginLeft="@dimen/_5sdp"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Price"
-                        android:layout_gravity="center"
+                        android:baselineAligned="false"
+                        android:text="product"
                         android:textColor="@color/black"
                         android:textSize="@dimen/_25sdp" />
 
-
                     <TextView
-                        android:id="@+id/dicountr"
-                        android:layout_gravity="center"
+                        android:id="@+id/category"
+                        android:layout_marginLeft="@dimen/_5sdp"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_marginLeft="@dimen/_10sdp"
-                        android:text="discount"
-                        android:textColor="#108E15"
+                        android:text="category"
+                        android:textColor="@color/black"
                         android:textSize="@dimen/_20sdp" />
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        >
 
+                        <RatingBar
+                            android:id="@+id/RatingBar"
+                            android:layout_marginLeft="@dimen/_5sdp"
+                            style="?android:attr/ratingBarStyleSmall"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:isIndicator="true"
+                            android:numStars="5"
+                            android:progressBackgroundTint="#D0000000"
+                            android:progressTint="@color/black"
+                            android:stepSize="0.9" />
+
+                        <TextView
+                            android:id="@+id/rate"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/_5sdp"
+                            android:text="rate"
+                            android:textColor="#92000000"
+                            android:textSize="@dimen/_12sdp" />
+
+
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:width="0.5dp"
+                        android:background="@drawable/shape2"
+                        android:layout_gravity="center"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_40sdp">
+
+                        <TextView
+                            android:id="@+id/price"
+                            android:layout_marginLeft="@dimen/_5sdp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Price"
+                            android:layout_gravity="center"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/_22sdp" />
+
+
+                        <TextView
+                            android:id="@+id/dicountr"
+                            android:layout_gravity="center"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/_10sdp"
+                            android:text="discount"
+                            android:textColor="#108E15"
+                            android:textSize="@dimen/_20sdp" />
+
+                    </LinearLayout>
+
+
+
+                    <TextView
+                        android:id="@+id/brand"
+                        android:layout_marginLeft="@dimen/_5sdp"
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="brand"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_15sdp" />
+
+                    <TextView
+                        android:id="@+id/stok"
+                        android:layout_marginLeft="@dimen/_5sdp"
+                        android:layout_marginBottom="@dimen/_5sdp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="stok"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_15sdp" />
                 </LinearLayout>
-
-
-
-                <TextView
-                    android:id="@+id/brand"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="brand"
-                    android:textColor="@color/black"
-                    android:textSize="@dimen/_15sdp" />
-
-                <TextView
-                    android:id="@+id/stok"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="stok"
-                    android:textColor="@color/black"
-                    android:textSize="@dimen/_15sdp" />
 
 
 
                 <LinearLayout
                     android:orientation="vertical"
+                    android:layout_marginTop="@dimen/_10sdp"
                     android:background="@drawable/shape1"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent">
@@ -169,6 +185,7 @@
 
                     <TextView
                         android:id="@+id/warranty"
+                        android:fontFamily="@font/font2"
                         android:layout_marginTop="@dimen/_5sdp"
                         android:layout_marginLeft="@dimen/_5sdp"
                         android:layout_width="wrap_content"
@@ -179,6 +196,7 @@
 
                     <TextView
                         android:id="@+id/returnPolicy"
+                        android:fontFamily="@font/font2"
                         android:layout_marginLeft="@dimen/_5sdp"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
@@ -189,6 +207,7 @@
 
                     <TextView
                         android:id="@+id/shiping"
+                        android:fontFamily="@font/font2"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="@dimen/_5sdp"
@@ -199,6 +218,7 @@
 
                     <TextView
                         android:id="@+id/availability"
+                        android:fontFamily="@font/font2"
                         android:layout_width="wrap_content"
                         android:layout_marginLeft="@dimen/_5sdp"
                         android:layout_height="wrap_content"
@@ -215,6 +235,7 @@
 
                         <TextView
                             android:id="@+id/width"
+                            android:fontFamily="@font/font2"
                             android:layout_marginLeft="@dimen/_5sdp"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
@@ -224,6 +245,7 @@
 
                         <TextView
                             android:id="@+id/height"
+                            android:fontFamily="@font/font2"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginLeft="@dimen/_2ssp"
@@ -233,6 +255,7 @@
 
                         <TextView
                             android:id="@+id/depth"
+                            android:fontFamily="@font/font2"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginLeft="@dimen/_2ssp"
@@ -260,12 +283,13 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="@dimen/_5sdp"
-                        android:fontFamily="@font/font2"
+                        android:fontFamily="@font/font3"
                         android:text="description  "
-                        android:textColor="#000000"
+                        android:textColor="#E4000000"
                         android:textSize="@dimen/_25sdp" />
                     <TextView
                         android:id="@+id/description"
+                        android:fontFamily="@font/font3"
                         android:layout_margin="@dimen/_10sdp"
                         android:layout_marginBottom="@dimen/_30sdp"
                         android:layout_width="wrap_content"
@@ -286,6 +310,7 @@
 
                     <TextView
                         android:text="Reviews"
+                        android:fontFamily="@font/font1"
                         android:layout_margin="@dimen/_10sdp"
                         android:textSize="@dimen/_20ssp"
                         android:textColor="@color/black"
@@ -304,14 +329,16 @@
                 </LinearLayout>
 
                 <LinearLayout
-                    android:layout_marginBottom="@dimen/_30sdp"
+                    android:layout_marginBottom="@dimen/_60sdp"
                     android:background="@drawable/shape1"
                     android:orientation="vertical"
+
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content">
 
                     <TextView
                         android:text="Meta"
+                        android:fontFamily="@font/font1"
                         android:textColor="@color/black"
                         android:layout_margin="@dimen/_5sdp"
                         android:layout_width="wrap_content"
@@ -350,14 +377,38 @@
 
                 </LinearLayout>
 
-
             </LinearLayout>
-
 
             </LinearLayout>
 
         </ScrollView>
 
+    <LinearLayout
+        android:layout_gravity="bottom"
+        android:gravity="center"
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
 
+        <com.google.android.material.button.MaterialButton
+            android:text="pay with emi"
+            android:textColor="@color/black"
+            android:backgroundTint="@color/white"
+            app:strokeWidth="@dimen/_1sdp"
+            android:textSize="@dimen/_13sdp"
+            android:layout_width="@dimen/_135sdp"
+            android:layout_height="@dimen/_50sdp" />
 
-</LinearLayout>
+        <com.google.android.material.button.MaterialButton
+            android:text="Buy now"
+            android:textColor="@color/white"
+            android:backgroundTint="@color/black"
+            app:strokeWidth="@dimen/_1sdp"
+            android:textSize="@dimen/_13sdp"
+            android:layout_marginLeft="@dimen/_20sdp"
+            android:layout_width="@dimen/_135sdp"
+            android:layout_height="@dimen/_50sdp" />
+
+    </LinearLayout>
+
+</FrameLayout>
