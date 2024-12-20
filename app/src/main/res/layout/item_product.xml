@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:gravity="center"
+        android:id="@+id/linearClik"
+        android:layout_margin="@dimen/_5sdp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_145sdp">
+
+
+        <ImageView
+            android:id="@+id/picture"
+            android:layout_width="@dimen/_100sdp"
+            android:layout_height="@dimen/_135sdp"/>
+
+        <LinearLayout
+
+            android:layout_marginTop="@dimen/_5sdp"
+            android:layout_gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/P_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="title "
+                android:textColor="@color/black"
+                android:textSize="@dimen/_15sdp" />
+
+            <LinearLayout
+                android:gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <RatingBar
+                    android:layout_gravity="center"
+                    android:id="@+id/RatingBar"
+                    android:isIndicator="true"
+                    android:numStars="5"
+                    android:stepSize="0.5"
+                    android:progressBackgroundTint="#D0000000"
+                    android:progressTint="@color/black"
+                    style="?android:attr/ratingBarStyleSmall"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:layout_marginLeft="@dimen/_5sdp"
+                    android:id="@+id/rate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#92000000"
+                    android:text="rate"
+                    android:textSize="@dimen/_12sdp" />
+
+            </LinearLayout>
+
+
+
+
+            <TextView
+                android:id="@+id/price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Price"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_15sdp" />
+
+
+            <TextView
+
+                android:id="@+id/discount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="discount"
+                android:textColor="#108E15"
+                android:textSize="@dimen/_15sdp" />
+
+            <TextView
+                android:id="@+id/warranty"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="warranty"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_15sdp" />
+
+
+            <TextView
+                android:id="@+id/availability"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="stok"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_15sdp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>
