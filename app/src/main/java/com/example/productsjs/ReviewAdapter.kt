@@ -38,16 +38,12 @@ class ReviewAdapter(var mainActivity2: MainActivity2, var reviews: ArrayList<Rev
 
         holder.rating.text= model.rating.toString()
 
-
-
-
-
-
-
         holder.comment.text = "comment : "+model.comment.toString()
         holder.date.text = "date : "+model.date
         holder.revName.text = " "+model.reviewerName
         holder.revEmail.text = " "+model.reviewerEmail
         holder.rattibar.rating= model.rating.toFloat()
+
     }
+
 }

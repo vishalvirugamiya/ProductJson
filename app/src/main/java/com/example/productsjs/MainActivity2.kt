@@ -32,15 +32,14 @@ class MainActivity2 : AppCompatActivity() {
 
         if(model!= null)
         {
+
 //            Glide.with(binding.image)
 //                .load(model.thumbnail)
 //                .into(binding.image)
-
             binding.product.text= model.title
             binding.category.text = model.category
             binding.RatingBar.rating= model.rating.toFloat()
             binding.rate.text = model.rating.toString()
-
 
             binding.brand.text="Brand : "+model.brand.toString()
             binding.stok.text= "stock : "+model.stock.toString()
@@ -57,6 +56,7 @@ class MainActivity2 : AppCompatActivity() {
             binding.width.text = "width "+model.dimensions.width.toString()+" ||"
             binding.height.text="height "+ model.dimensions.height.toString()+" ||"
             binding.depth.text = "depth "+model.dimensions.depth.toString()
+
             binding.created.text = model.meta.createdAt
             binding.updatedAt.text= model.meta.updatedAt
             binding.barcode.text = "Barcode : "+model.meta.barcode

@@ -32,8 +32,6 @@ class MainActivity : AppCompatActivity() {
 //            insets
 //        }
 
-
-
         products()
 
     }
